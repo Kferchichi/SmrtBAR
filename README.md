@@ -39,11 +39,9 @@ requirements.
 
 Dependencies:
 
-gcc_6_4.0 : GNU Compiler Collection.
-globalenv: The global environment is the first item on the search path, it is considered as the
-user's workspace.
-htslib_1.9
-pbcopper: Core C++ library for data structures, algorithms, and utilities.
-zlib_1.2.8:
+gcc
+htslib
+pbcopper
+zlib
 -Algorithm-NeedlemanWunsch
 -perl
