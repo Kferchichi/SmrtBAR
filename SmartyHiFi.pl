@@ -22,7 +22,7 @@ use diagnostics;
 ####################################################################################################
 
 
-   print "SmartyHifi.pl by Khaoula Ferchichi\nEnjoy it!\n";
+   print "SmartyHiFi.pl by Khaoula Ferchichi\nEnjoy it!\n";
 
 my $fastq_file;
 my $barcodes_file;
@@ -45,7 +45,7 @@ if (defined($ARGV[1])) {
 
 	}
 else {
-    print "\nUsage: perl SmartyHifi.pl [name].hifireads.fatsq [PacBio_barcodes].fasta\t try again\n";
+    print "\nUsage: perl SmartyHiFi.pl [name].hifireads.fatsq [PacBio_barcodes].fasta\t try again\n";
 die;
 	}
 my $data = $fastq_file;
