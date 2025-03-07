@@ -38,7 +38,7 @@ if(@ARGV){
     $translation_file=$ARGV[1];    
 
 } else {
-    print "\nUsage: perl Barcode_trans.pl [Amplicon_analysis.fastq] [translation_file.txt]\t try again\n";
+    print "\nUsage: perl BarTrans.pl [Amplicon_analysis.fastq] [translation_file.txt]\t try again\n";
  die;
  
 }
