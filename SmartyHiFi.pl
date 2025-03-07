@@ -52,7 +52,7 @@ my $data = $fastq_file;
    $data =~ s/\.hifireads\.fastq//i;
 
 #please note that you need to write your own path where you package has been saved.
-my $path = '/media/nees/My_Passport/From_the_Computer/Package_SMRT_DEMUX-v0.1/SMART_HiFi';                    #Path to lima and laa shell scripts
+my $path = '/YOUR/PATH/TO/Package';                    #Path to lima and laa shell scripts
 
     print cwd,"\n\n";
 #Create an OUTPUT subdirectory
@@ -71,7 +71,7 @@ my @dir = readdir(IN);
 #For every fastq output file, we need to add the Barcode's name to the headers
 my $subject_direction = "Edit";
      print "\n**********************\nContent of folder OUTPUT\n***************\n";
-     opendir DIR, "/media/nees/My_Passport/11335_MesiCrust/new_analysis/OUTPUT" or die "cannot read directory\n";
+     opendir DIR, "/YOUR/PATH/TO/OUTPUT" or die "cannot read directory\n";
 while (my $exis_file = readdir DIR) {
 if ($exis_file =~ /_demux.(BC\d+--BC\d+).fastq/) {
 my $barcode = $1;
@@ -100,7 +100,7 @@ while (<$host_file>) {
      close $final_out or die $!;
 }
 #Start the clustering tool Vsearch with your preferable option
-     opendir DIR, "/media/nees/My_Passport/11335_MesiCrust/new_analysis/OUTPUT/" or die "cannot read directory\n";
+     opendir DIR, "/YOUR/PATH/TO/OUTPUT/" or die "cannot read directory\n";
 while (my $out_file = readdir DIR) {
 if ($out_file =~ /demux_lima.fastq/) {
       print "Processing $out_file now......\n";
