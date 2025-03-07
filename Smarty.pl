@@ -57,7 +57,7 @@ my $data = $xml_file;
 $data =~ s/\.subreadset\.xml//i;
 	
 #please note that you need to write your own path where you package has been saved.
-my $path = '/home/nees/Package_SMRT_DEMUX-v0.1/tools';                    #Path to lima and laa shell scripts 
+my $path = '/YOUR/PATH/TO/tools';                    #Path to lima and laa shell scripts 
 
 
 print cwd,"\n\n";
