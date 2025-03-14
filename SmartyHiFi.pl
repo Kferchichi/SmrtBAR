@@ -44,7 +44,7 @@ if (defined($ARGV[1])) {
    }
 
 	}
-else {
+else { 
     print "\nUsage: perl SmartyHiFi.pl [name].hifireads.fatsq [PacBio_barcodes].fasta\t try again\n";
 die;
 	}
